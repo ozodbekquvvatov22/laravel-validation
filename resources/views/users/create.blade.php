@@ -1,4 +1,4 @@
-    <form action="/users" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('users.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         @error('name')
             <div>{{$message}}</div>

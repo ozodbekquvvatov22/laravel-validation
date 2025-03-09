@@ -1,4 +1,4 @@
-<form action="/products" method="POST">
+<form action="{{route ('products.store')}}" method="POST">
     @csrf
     @error('name')
         <div>{{$message}}</div>
